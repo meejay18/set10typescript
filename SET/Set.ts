@@ -75,3 +75,17 @@
 //   return timer;
 // };
 // console.log(countdown(20));
+
+const countdown2 = (number: number) => {
+  let count = setInterval(() => {
+    number--;
+
+    if (number === 0) {
+      console.log("Time's up");
+      clearInterval;
+    }
+
+    return count;
+  });
+  console.log(count);
+};
